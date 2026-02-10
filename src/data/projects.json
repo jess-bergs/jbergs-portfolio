@@ -1,0 +1,116 @@
+[
+  {
+    "id": "aisi-future-of-work",
+    "title": "AI and the Future of Work",
+    "description": "Built research tools for AISI's pilot study measuring AI-driven productivity gains across workplace tasks. Study with 500 participants found 25% higher quality and 61% faster completion with AI assistance.",
+    "image": "/images/aisi-ai-and-the-future-of-work.png",
+    "link": "https://www.aisi.gov.uk/blog/ai-and-the-future-of-work-measuring-ai-driven-productivity-gains-for-workplace-tasks",
+    "year": "2026",
+    "categories": ["Research Tooling", "Empirical Study", "AI Security"]
+  },
+  {
+    "id": "arxiv-ai-advice",
+    "title": "AI Personal Advice Study",
+    "description": "Developed data collection tools for longitudinal controlled study examining how people follow AI advice. Found 75% of participants followed GPT-4o advice on personal matters, though with no sustained well-being improvements.",
+    "image": "/images/arxiv.png",
+    "link": "https://arxiv.org/abs/2511.15352v2",
+    "year": "2025",
+    "categories": ["Research Tooling","Empirical Study", "AI Security"]
+  },
+  {
+    "id": "arxiv-political-knowledge",
+    "title": "Conversational AI & Political Knowledge",
+    "description": "Built experiment platform for study with 2,858 participants examining AI chatbot usage for political information. Demonstrated AI increases political knowledge as effectively as internet search.",
+    "image": "/images/arxiv.png",
+    "link": "https://arxiv.org/abs/2509.05219v2",
+    "year": "2025",
+    "categories": ["Research Tooling","Empirical Study", "AI Security"]
+  },
+  {
+    "id": "public-design-conference",
+    "title": "Public Design Conference 2025",
+    "description": "Co-organised the inaugural global public design conference bringing together government designers worldwide. Part of World Design Congress, in collaboration with Royal College of Art and Greater London Authority.",
+    "link": "https://publicpolicydesign.blog.gov.uk/2025/07/14/join-our-first-global-public-design-conference/",
+    "year": "2025",
+    "categories": ["Event Organisation", "Conference"]
+  },
+  {
+    "id": "services-week-2025",
+    "title": "Services Week 2025",
+    "description": "Presented AISI's research tools at Services Week 2025, the UK government's annual event bringing together public sector professionals to share knowledge on service design and digital innovation.",
+    "image": "/images/servicesWeek2025.png",
+    "link": "https://services.blog.gov.uk/2024/12/19/services-week-is-back-for-2025/",
+    "year": "2025",
+    "categories": ["Public Speaking", "Conference"]
+  },
+  {
+    "id": "chi-staig-2025",
+    "title": "CHI 2025 STAIG Workshop",
+    "description": "Panel speaker at the CHI 2025 workshop on Sociotechnical AI Governance: Opportunities and Challenges for HCI. Hybrid event held in Yokohama, Japan discussing AI governance from HCI perspectives.",
+    "link": "https://chi-staig.github.io/",
+    "year": "2025",
+    "categories": ["Public Speaking", "Conference", "AI Security"]
+  },
+  {
+    "id": "aisi-eurips-2025",
+    "title": "AISI EurIPS 2025 Social",
+    "description": "Organised the UK AI Security Institute's social event during EurIPS 2025 in Copenhagen, bringing together roughly 50 attendees from the AI safety research community to discuss frontier AI risks and technical solutions.",
+    "link": "https://luma.com/bpu4e3s4",
+    "year": "2025",
+    "categories": ["Event Organisation", "AI Security"]
+  },
+  {
+    "id": "bbc-explainable-ai",
+    "title": "Making AI More Understandable",
+    "description": "BBC R&D project researching Explainable AI to make AI decision-making transparent and interpretable. Prototyped ML-powered proofs-of-concept including generative ML art and interactive visualizations.",
+    "image": "/images/MakingAIUnderstandable.png",
+    "link": "https://www.bbc.co.uk/rd/projects/making-ai-more-understandable/",
+    "year": "2019-2021",
+    "categories": ["Foresight Research", "Prototyping", "Explainable AI"]
+  },
+  {
+    "id": "bbc-together",
+    "title": "BBC Together",
+    "description": "A trial of a social watching and listening experience from BBC R&D. Multi-user iPlayer viewer enabling synchronized viewing experiences. Ran on BBC Taster for 1.5 years.",
+    "image": "/images/bbcTogether.png",
+    "link": "https://www.bbc.co.uk/programmes/p08dj0s5",
+    "year": "2020-2021",
+    "categories": ["Experimental", "Real-time Collaboration"]
+  },
+  {
+    "id": "bbc-tech-meetup",
+    "title": "BBC Tech Meetup",
+    "description": "Co-organiser of BBC Tech Meetup, facilitating knowledge sharing on latest technologies and development practices. Ran 2 sessions and helped organize the series.",
+    "image": "/images/bbctechmeetup.png",
+    "link": "https://www.bbc.co.uk/programmes/articles/4BCZv12wbBYcsyKMbpyT574/bbc-tech-meetup",
+    "year": "2019-2021",
+    "categories": ["Event Organisation"]
+  },
+  {
+    "id": "trent-basin",
+    "title": "Trent Basin Community Information Model",
+    "description": "Spatial data visualization for Trent Basin community. Immersive VR experience for trade fair exhibition featuring spatial audio and WebGL.",
+    "image": "/images/trent.jpg",
+    "link": "https://www.projectscene.uk/trent-basin-community-information-model/",
+    "year": "2018-2019",
+    "categories": ["Energy Efficiency"]
+  },
+  {
+    "id": "entrust",
+    "title": "EU HORIZON – ENTRUST",
+    "description": "EU H2020 R&D project on improving energy efficiency for the built environment and researching social factors in energy citizenship. Led requirements analysis and UX development. Published research findings on energy citizenship and community engagement in sustainable energy transitions.",
+    "image": "/images/EntrustHorizon.png",
+    "link": "https://cordis.europa.eu/project/id/657998",
+    "year": "2015-2018",
+    "categories": ["Energy Efficiency"]
+  },
+  {
+    "id": "lab2",
+    "title": "Lab²",
+    "description": "Master's Thesis project. A collaborative cross-reality game for virtual team building. Award 'Best Research Poster' at iLRN Conference",
+    "image": "/images/lab2.png",
+    "link": "https://masters-portfolio.jbergs.eu/lab",
+    "year": "2015",
+    "categories": ["Publication", "Experimental", "Real-Time Collaboration"]
+  }
+]

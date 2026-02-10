@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1a2b4d;
+  --color-secondary: #f8f9fa;
+
+  --font-sans: 'Montserrat', system-ui, sans-serif;
+}
+
+body {
+  @apply font-sans text-primary antialiased;
+}
