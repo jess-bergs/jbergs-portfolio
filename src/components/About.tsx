@@ -35,7 +35,7 @@ const About = () => {
            &nbsp;– developing benchmarks to evaluate whether AI agents understand their operational context and capabilities. My broader interest is in how humans and machines interact, particularly as LLMs and agents reshape our relationship with artificial intelligence.
         </p>
         <p className="text-sm md:text-base leading-relaxed text-primary/85">
-          My career so far has been a wild mix of R&D, public sector work and creative tech – from Explainable AI research at BBC R&D to EU Horizon projects on energy citizenship. I'm a proud generalist and love bringing people together via events & conferences I organise. Outside work, I design and playtest board games.
+          My career so far has been a wild mix of R&D, public sector work and creative tech – from AI Security to creative prototyping at BBC R&D to EU Horizon projects on energy citizenship. I'm a proud generalist and love bringing people together via events & conferences I organise. Outside work, I design and playtest board games.
         </p>
       </div>
     </section>
