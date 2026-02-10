@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="flex flex-col gap-8 items-start w-full">
         {/* Content */}
         <div className="w-full">
-          <h1 className="text-4xl md:text-5xl font-bold tracking-wide mb-2 text-primary uppercase">
+          <h1 className="text-4xl md:text-5xl font-bold tracking-normal mb-2 text-primary uppercase">
             Jess Bergs
           </h1>
           <p className="text-base md:text-lg mb-4 text-primary/80">
