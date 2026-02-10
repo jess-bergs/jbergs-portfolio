@@ -1,42 +1,43 @@
 [
   {
     "id": "aisi-future-of-work",
-    "title": "AI and the Future of Work",
-    "description": "Built research tools for AISI's pilot study measuring AI-driven productivity gains across workplace tasks. Study with 500 participants found 25% higher quality and 61% faster completion with AI assistance.",
+    "title": "AI and the Future of Work – Study",
+    "description": "Collaborated with researchers to build data collection app for pilot study measuring AI-driven productivity gains across workplace tasks. Study with 500 participants found 25% higher quality and 61% faster completion with AI assistance.",
     "image": "/images/aisi-ai-and-the-future-of-work.png",
     "link": "https://www.aisi.gov.uk/blog/ai-and-the-future-of-work-measuring-ai-driven-productivity-gains-for-workplace-tasks",
     "year": "2026",
-    "categories": ["Research Tooling", "Empirical Study", "AI Security"]
+    "categories": ["Human-AI Interaction", "Research Tooling", "Empirical Study", "AI Security"]
   },
   {
     "id": "arxiv-ai-advice",
-    "title": "AI Personal Advice Study",
-    "description": "Developed data collection tools for longitudinal controlled study examining how people follow AI advice. Found 75% of participants followed GPT-4o advice on personal matters, though with no sustained well-being improvements.",
+    "title": "AI Advice-Giving – Study",
+    "description": "Expanded our experiment apps platform for supporting longitudinal controlled study examining how people follow AI advice. Found 75% of participants followed GPT-4o advice on personal matters, though with no sustained well-being improvements.",
     "image": "/images/arxiv.png",
     "link": "https://arxiv.org/abs/2511.15352v2",
     "year": "2025",
-    "categories": ["Research Tooling","Empirical Study", "AI Security"]
+    "categories": ["Human-AI Interaction", "Research Tooling", "Empirical Study", "AI Security"]
   },
   {
     "id": "arxiv-political-knowledge",
-    "title": "Conversational AI & Political Knowledge",
-    "description": "Built experiment platform for study with 2,858 participants examining AI chatbot usage for political information. Demonstrated AI increases political knowledge as effectively as internet search.",
+    "title": "AI and Political Knowledge – Study",
+    "description": "Worked closely with researchers to build web app and infrastructure for the data collection for empirical study with 2,858 participants examining AI chatbot usage for political information. Demonstrated AI increases political knowledge as effectively as internet search.",
     "image": "/images/arxiv.png",
     "link": "https://arxiv.org/abs/2509.05219v2",
     "year": "2025",
-    "categories": ["Research Tooling","Empirical Study", "AI Security"]
+    "categories": ["Human-AI Interaction", "Research Tooling", "Empirical Study", "AI Security"]
   },
   {
     "id": "public-design-conference",
     "title": "Public Design Conference 2025",
     "description": "Co-organised the inaugural global public design conference bringing together government designers worldwide. Part of World Design Congress, in collaboration with Royal College of Art and Greater London Authority.",
+    "image": "/images/publicDesignConf.png",
     "link": "https://publicpolicydesign.blog.gov.uk/2025/07/14/join-our-first-global-public-design-conference/",
     "year": "2025",
     "categories": ["Event Organisation", "Conference"]
   },
   {
     "id": "services-week-2025",
-    "title": "Services Week 2025",
+    "title": "AISI HAI @ Services Week 2025",
     "description": "Presented AISI's research tools at Services Week 2025, the UK government's annual event bringing together public sector professionals to share knowledge on service design and digital innovation.",
     "image": "/images/servicesWeek2025.png",
     "link": "https://services.blog.gov.uk/2024/12/19/services-week-is-back-for-2025/",
@@ -45,8 +46,9 @@
   },
   {
     "id": "chi-staig-2025",
-    "title": "CHI 2025 STAIG Workshop",
+    "title": "AISI HAI @ CHI 2025 STAIG Panel ",
     "description": "Panel speaker at the CHI 2025 workshop on Sociotechnical AI Governance: Opportunities and Challenges for HCI. Hybrid event held in Yokohama, Japan discussing AI governance from HCI perspectives.",
+    "image": "/images/staig-chi.png",
     "link": "https://chi-staig.github.io/",
     "year": "2025",
     "categories": ["Public Speaking", "Conference", "AI Security"]
@@ -55,6 +57,7 @@
     "id": "aisi-eurips-2025",
     "title": "AISI EurIPS 2025 Social",
     "description": "Organised the UK AI Security Institute's social event during EurIPS 2025 in Copenhagen, bringing together roughly 50 attendees from the AI safety research community to discuss frontier AI risks and technical solutions.",
+    "image": "/images/eurips.png",
     "link": "https://luma.com/bpu4e3s4",
     "year": "2025",
     "categories": ["Event Organisation", "AI Security"]
@@ -66,7 +69,7 @@
     "image": "/images/MakingAIUnderstandable.png",
     "link": "https://www.bbc.co.uk/rd/projects/making-ai-more-understandable/",
     "year": "2019-2021",
-    "categories": ["Foresight Research", "Prototyping", "Explainable AI"]
+    "categories": ["Explainable AI", "Experimental"]
   },
   {
     "id": "bbc-together",
@@ -75,12 +78,12 @@
     "image": "/images/bbcTogether.png",
     "link": "https://www.bbc.co.uk/programmes/p08dj0s5",
     "year": "2020-2021",
-    "categories": ["Experimental", "Real-time Collaboration"]
+    "categories": ["Real-Time Collaboration","Experimental"]
   },
   {
     "id": "bbc-tech-meetup",
     "title": "BBC Tech Meetup",
-    "description": "Co-organiser of BBC Tech Meetup, facilitating knowledge sharing on latest technologies and development practices. Ran 2 sessions and helped organize the series.",
+    "description": "Co-organised the BBC Tech Meetup, facilitating knowledge sharing on latest technologies and development practices.",
     "image": "/images/bbctechmeetup.png",
     "link": "https://www.bbc.co.uk/programmes/articles/4BCZv12wbBYcsyKMbpyT574/bbc-tech-meetup",
     "year": "2019-2021",
@@ -89,7 +92,7 @@
   {
     "id": "trent-basin",
     "title": "Trent Basin Community Information Model",
-    "description": "Spatial data visualization for Trent Basin community. Immersive VR experience for trade fair exhibition featuring spatial audio and WebGL.",
+    "description": "Experience design for data visualisation project of building energy data for Trent Basin re-development project while at IES Ltd.",
     "image": "/images/trent.jpg",
     "link": "https://www.projectscene.uk/trent-basin-community-information-model/",
     "year": "2018-2019",
@@ -98,7 +101,7 @@
   {
     "id": "entrust",
     "title": "EU HORIZON – ENTRUST",
-    "description": "EU H2020 R&D project on improving energy efficiency for the built environment and researching social factors in energy citizenship. Led requirements analysis and UX development. Published research findings on energy citizenship and community engagement in sustainable energy transitions.",
+    "description": "EU H2020 R&D project during my time at IES Ltd on improving energy efficiency for the built environment and researching social factors in energy citizenship. Led requirements analysis and UX development. Research findings published on energy citizenship and community engagement in sustainable energy transitions.",
     "image": "/images/EntrustHorizon.png",
     "link": "https://cordis.europa.eu/project/id/657998",
     "year": "2015-2018",
@@ -106,11 +109,29 @@
   },
   {
     "id": "lab2",
-    "title": "Lab²",
+    "title": "Lab² – A collaborative cross-reality game for virtual team building ",
     "description": "Master's Thesis project. A collaborative cross-reality game for virtual team building. Award 'Best Research Poster' at iLRN Conference",
     "image": "/images/lab2.png",
     "link": "https://masters-portfolio.jbergs.eu/lab",
     "year": "2015",
-    "categories": ["Publication", "Experimental", "Real-Time Collaboration"]
+    "categories": ["Paper", "Experimental", "Real-Time Collaboration"]
+  },
+  {
+    "id": "masters-portfolio",
+    "title": "Master's Portfolio",
+    "description": "Portfolio showcasing three major projects from my M.Sc. in Visualisation: Serious Games Development at Glasgow School of Art. Features Lab² (cross-reality collaboration), GoMA (RT3D heritage visualisation) and Spartathlon (Serious Game using Fitbit).",
+    "image": "/images/masterspf.jpg",
+    "link": "https://masters-portfolio.jbergs.eu/",
+    "year": "2014-2015",
+    "categories": ["Experimental"]
+  },
+  {
+    "id": "tedx-stuttgart",
+    "title": "TEDxStuttgart",
+    "description": "Co-organised regular TEDx event series showcasing innovative ideas in technology, education and design from and for the city of Stuttgart and the land Baden-Württemberg. Events: Act. Change. Now., Post-X, Collaborate For Humanity, Re:Think – Re:Invent – Re:Create.",
+    "image": "/images/tedxstuttgartnexteveent.jpg",
+    "link": "https://www.tedxstuttgart.de/",
+    "year": "2011-2018",
+    "categories": ["Event Organisation", "Conference" ]
   }
 ]

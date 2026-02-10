@@ -1,16 +1,21 @@
 import { useParams, Link } from 'react-router-dom'
+import { Button } from '@/components/ui/button'
 
 const ProjectDetail = () => {
   const { id } = useParams<{ id: string }>()
 
   return (
     <div className="py-20 md:py-32">
-      <Link
-        to="/"
-        className="text-sm font-semibold text-primary/70 hover:text-primary transition-colors inline-flex items-center gap-1 mb-8"
+      <Button
+        variant="ghost"
+        size="sm"
+        asChild
+        className="mb-8 -ml-2 text-primary/70 hover:text-primary"
       >
-        ← Back to Home
-      </Link>
+        <Link to="/" className="inline-flex items-center gap-1">
+          ← Back to Home
+        </Link>
+      </Button>
 
       <h1 className="text-3xl md:text-4xl font-bold mb-8 text-primary">
         Project: {id}

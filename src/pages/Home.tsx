@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       {/* Hero and About side by side */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 py-20 md:py-32">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 py-8 md:py-12">
         <Hero />
         <About />
       </div>

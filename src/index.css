@@ -1,12 +1,78 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #1a2b4d;
-  --color-secondary: #f8f9fa;
-
-  --font-sans: 'Montserrat', system-ui, sans-serif;
+  /* Existing custom colors */
+    --color-primary: #020367;
+    --color-secondary: #020367;
+    --color-link: #020367;
+    --color-highlight: #020367;
+    /* shadcn/ui theme variables in OKLCH (Tailwind v4 format) */
+      --color-background: oklch(100% 0 0);
+      --color-foreground: oklch(15% 0.02 255);
+    
+      --color-card: oklch(100% 0 0);
+      --color-card-foreground: oklch(15% 0.02 255);
+    
+      --color-popover: oklch(100% 0 0);
+      --color-popover-foreground: oklch(15% 0.02 255);
+    
+      --color-primary-shadcn: oklch(15% 0.02 255);
+      --color-primary-foreground: oklch(98% 0 0);
+    
+      --color-secondary-shadcn: oklch(97% 0 0);
+      --color-secondary-foreground: oklch(15% 0.02 255);
+    
+      --color-muted: oklch(96% 0 0);
+      --color-muted-foreground: oklch(45% 0.01 255);
+    
+      --color-accent: oklch(96% 0 0);
+      --color-accent-foreground: oklch(15% 0.02 255);
+    
+      --color-destructive: oklch(55% 0.22 25);
+      --color-destructive-foreground: oklch(98% 0 0);
+    
+      --color-border: oklch(90% 0 0);
+      --color-input: oklch(90% 0 0);
+      --color-ring: oklch(15% 0.02 255);
+    
+      --radius: 0.5rem;
+      /* Font */
+      --font-sans: 'Quicksand', system-ui, sans-serif;
+      --font-heading: 'Segoe UI', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
 }
 
 body {
-  @apply font-sans text-primary antialiased;
+  @apply font-sans text-primary antialiased bg-background;
+  }
+  
+  /* Layer for shadcn/ui base styles */
+  @layer base {
+    * {
+      @apply border-border;
+    }
+  
+    h1 {
+      font-family: var(--font-heading);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.025em;
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: var(--font-heading);
+      font-weight: 900;
+      letter-spacing: 0.02em;
+    }
+  
+    a {
+      color: var(--color-link);
+    }
+  
+    a:hover {
+      color: oklch(from var(--color-link) calc(l * 0.8) c h);
+    }
 }
