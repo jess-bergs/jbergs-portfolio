@@ -6,7 +6,7 @@
     "image": "/images/aisi-ai-and-the-future-of-work.png",
     "link": "https://www.aisi.gov.uk/blog/ai-and-the-future-of-work-measuring-ai-driven-productivity-gains-for-workplace-tasks",
     "year": "2026",
-    "categories": ["Human-AI Interaction", "Research Tooling", "Empirical Study", "AI Security"]
+    "categories": ["Research Tooling", "Empirical Study", "AI Security", "Paper"]
   },
   {
     "id": "arxiv-ai-advice",
@@ -15,7 +15,7 @@
     "image": "/images/arxiv.png",
     "link": "https://arxiv.org/abs/2511.15352v2",
     "year": "2025",
-    "categories": ["Human-AI Interaction", "Research Tooling", "Empirical Study", "AI Security"]
+    "categories": ["Research Tooling", "Empirical Study", "AI Security", "Paper"]
   },
   {
     "id": "arxiv-political-knowledge",
@@ -24,7 +24,7 @@
     "image": "/images/arxiv.png",
     "link": "https://arxiv.org/abs/2509.05219v2",
     "year": "2025",
-    "categories": ["Human-AI Interaction", "Research Tooling", "Empirical Study", "AI Security"]
+    "categories": ["Research Tooling", "Empirical Study", "AI Security", "Paper"]
   },
   {
     "id": "public-design-conference",

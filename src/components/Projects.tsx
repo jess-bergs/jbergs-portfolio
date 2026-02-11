@@ -39,9 +39,9 @@ const ProjectCard = ({ project }: { project: Project }) => {
           {project.description}
         </p>
         {project.categories && project.categories.length > 0 && (
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 pointer-events-none">
             {project.categories.map((category, index) => (
-              <Badge key={index} variant="secondary">
+              <Badge key={index} variant="secondary" className="cursor-default">
                 {category}
               </Badge>
             ))}
