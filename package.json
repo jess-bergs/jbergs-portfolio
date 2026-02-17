@@ -9,7 +9,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && node scripts/build.mjs",
     "preview": "vite preview",
     "deploy": "npm run build && gh-pages -d dist"
   },
@@ -36,6 +36,7 @@
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.18",
     "typescript": "^5.7.2",
-    "vite": "^6.0.7"
+    "vite": "^6.0.7",
+    "vite-prerender-plugin": "^0.5.12"
   }
 }
