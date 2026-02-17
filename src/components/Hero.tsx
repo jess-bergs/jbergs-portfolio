@@ -11,7 +11,7 @@ const Hero = () => {
             Jess Bergs
           </h1>
           <p className="text-base md:text-lg mb-4 text-primary/80">
-            Human-AI Interactions @ UK AISI – Research Unit
+            Human-AI Interaction @ UK AISI – Research Unit
             <br></br> R&D Innovation Engineer
           </p>
 
