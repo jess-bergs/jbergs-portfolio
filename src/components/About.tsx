@@ -1,12 +1,11 @@
 const About = () => {
   return (
     <section id="about" className="relative isolate flex flex-col">
-      <div className="hero-blob" aria-hidden="true" />
       <h2 className="section-h2 mb-6">Hi, there!</h2>
       <div>
         <p
-          className="mb-5 text-[0.95rem] leading-relaxed md:text-base"
-          style={{ color: 'var(--color-ink-soft)' }}
+          className="mb-5 text-[0.88rem] font-medium leading-relaxed md:text-[0.95rem]"
+          style={{ color: '#3a4050' }}
         >
           I lead engineering &amp; product strategy at the{' '}
           <a
@@ -21,8 +20,8 @@ const About = () => {
           data for their groundbreaking AI security research experiments at scale.
         </p>
         <p
-          className="mb-5 text-[0.95rem] leading-relaxed md:text-base"
-          style={{ color: 'var(--color-ink-soft)' }}
+          className="mb-5 text-[0.88rem] font-medium leading-relaxed md:text-[0.95rem]"
+          style={{ color: '#3a4050' }}
         >
           I'm currently also a Research Fellow at{' '}
           <a
@@ -48,8 +47,8 @@ const About = () => {
           artificial intelligence.
         </p>
         <p
-          className="text-[0.95rem] leading-relaxed md:text-base"
-          style={{ color: 'var(--color-ink-soft)' }}
+          className="text-[0.88rem] font-medium leading-relaxed md:text-[0.95rem]"
+          style={{ color: '#3a4050' }}
         >
           My career so far has been a wild mix of R&amp;D, public sector work and creative
           tech – from AI Security to creative prototyping at BBC R&amp;D to EU Horizon

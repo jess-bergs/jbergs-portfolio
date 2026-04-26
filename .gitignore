@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 TODO.md
 CLAUDE.md
+
+# Playwright MCP debugging artefacts
+.playwright-mcp/

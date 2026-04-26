@@ -1,5 +1,37 @@
 @import "tailwindcss";
 
+/* ---------- Charter (self-hosted, X Consortium licence) ---------- */
+@font-face {
+  font-family: "Charter";
+  src: url("/fonts/charter/charter_regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Charter";
+  src: url("/fonts/charter/charter_italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Charter";
+  src: url("/fonts/charter/charter_bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Charter";
+  src: url("/fonts/charter/charter_bold_italic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
 @theme {
   /* ---------- Brand palette (Tinkerbox-style) ---------- */
   --color-bg-top: #fbfbfb;
@@ -10,8 +42,9 @@
   --color-line: rgba(10, 10, 10, 0.08);
   --color-line-strong: rgba(10, 10, 10, 0.14);
 
-  --font-serif: ui-serif, "New York", Charter, "Iowan Old Style", "Apple Garamond", Georgia, "Times New Roman", serif;
-  --font-sans: "Neue Haas Grotesk Text Pro", "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Charter", ui-serif, "New York", "Iowan Old Style", "Apple Garamond", Georgia, "Times New Roman", serif;
+    --font-serif-display: "Playfair Display", ui-serif, "New York", Charter, "Iowan Old Style", Georgia, "Times New Roman", serif;
+    --font-sans: "Quicksand", "Neue Haas Grotesk Text Pro", "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
   /* Aliases kept so existing components that reference --color-primary still resolve */
   --color-primary: var(--color-ink);
@@ -49,8 +82,8 @@ body {
   margin: 0;
   min-height: 100vh;
   background:
-    linear-gradient(188deg,
-      var(--color-bg-top) 0%,
+    linear-gradient(180deg,
+        var(--color-bg-top) 20%,
       var(--color-bg-bottom) 95%) fixed;
   color: var(--color-ink);
   font-family: var(--font-sans);
@@ -108,32 +141,47 @@ body::before {
 /* ---------- Hero blob (rotate + breathe) ---------- */
 .hero-blob {
   position: absolute;
-  top: -170px;
-  right: -65%;
-  width: 180%;
-  aspect-ratio: 1.1 / 1;
+  top: -260px;
+    right: auto;
+    left: 145%;
+    width: 100%;
+    aspect-ratio: 1.2 / 1;
   z-index: -1;
   background:
-    radial-gradient(closest-side at 35% 45%, #ffd1c0 0%, rgba(255, 209, 192, 0) 70%),
-    radial-gradient(closest-side at 60% 35%, #fff3a8 0%, rgba(255, 243, 168, 0) 65%),
-    radial-gradient(closest-side at 60% 65%, #e6ccf3 0%, rgba(230, 204, 243, 0) 70%),
-    radial-gradient(closest-side at 35% 70%, #c5dafd 0%, rgba(197, 218, 253, 0) 75%);
-  filter: blur(40px);
+    radial-gradient(45% 90% at 12% 50%, #ffd1c0 0%, rgba(255, 209, 192, 0) 80%),
+      radial-gradient(40% 95% at 35% 50%, #fff3a8 0%, rgba(255, 243, 168, 0) 78%),
+      radial-gradient(45% 90% at 62% 50%, #e6ccf3 0%, rgba(230, 204, 243, 0) 80%),
+      radial-gradient(45% 95% at 88% 50%, #c5dafd 0%, rgba(197, 218, 253, 0) 82%);
+      background-size: 220% 100%;
+      background-position: 0% 50%;
+      filter: blur(45px);
   opacity: 0.85;
   pointer-events: none;
+  transform: rotate(50deg);
   transform-origin: 50% 50%;
   animation:
-    heroBlobRotate 110s linear infinite,
-    heroBlobBreathe 22s ease-in-out infinite;
-  will-change: rotate, scale;
+    heroBlobPrism 28s ease-in-out infinite alternate,
+      heroBlobBreathe 16s ease-in-out infinite;
+      will-change: background-position, scale;
 }
-@keyframes heroBlobRotate {
-  from { rotate: 0deg; }
-  to   { rotate: 360deg; }
+@keyframes heroBlobPrism {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
 }
 @keyframes heroBlobBreathe {
-  0%,100% { scale: 0.92; }
-  50%     { scale: 1.18; }
+  0%,
+    100% {
+      scale: 0.97;
+    }
+  
+    50% {
+      scale: 1.06;
+    }
 }
 @media (prefers-reduced-motion: reduce) {
   .hero-blob { animation: none; }
@@ -142,10 +190,10 @@ body::before {
 /* ---------- Hero serif headline ---------- */
 .hero-h1 {
   font-family: var(--font-serif);
-  font-weight: 600;
-  font-size: clamp(2.4rem, 6vw, 4rem);
+    font-weight: 500;
+      font-size: clamp(2.5rem, 6.2vw, 4.1rem);
   line-height: 1.05;
-  letter-spacing: -0.015em;
+  letter-spacing: 0.005em;
   margin: 0 0 2rem;
   max-width: 22ch;
   text-transform: none;
@@ -197,7 +245,7 @@ body::before {
 /* Section h2 — serif, no underline */
 .section-h2 {
   display: inline-block;
-  font-size: clamp(1.25rem, 2.2vw, 1.7rem);
+  font-size: clamp(1.05rem, 1.8vw, 1.4rem);
   font-weight: 400;
   line-height: 1.1;
   letter-spacing: -0.015em;
@@ -255,6 +303,7 @@ body::before {
   background: rgba(10, 10, 10, 0.04);
   color: var(--color-ink-soft);
   font-size: 0.78rem;
+  font-weight: 500;
   border: 0;
   cursor: pointer;
   transition: background 0.15s ease, color 0.15s ease;
@@ -313,10 +362,18 @@ body::before {
 }
 .project-card__body { padding: 1.1rem 1.25rem 1.25rem; display: flex; flex-direction: column; gap: 0.6rem; flex: 1; }
 .project-card__title { font-family: var(--font-sans); font-weight: 500; font-size: 1.05rem; line-height: 1.3; margin: 0; }
-.project-card__desc { font-size: 0.92rem; color: var(--color-ink-soft); line-height: 1.5; margin: 0; flex: 1; }
+.project-card__desc {
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--color-ink-soft);
+  line-height: 1.5;
+  margin: 0;
+  flex: 1;
+}
 .project-card__tags { display: flex; flex-wrap: wrap; gap: 0.35rem; }
 .project-card__tag {
   font-size: 0.72rem;
+  font-weight: 500;
   letter-spacing: 0.01em;
   color: var(--color-ink-soft);
   background: rgba(10, 10, 10, 0.04);
@@ -325,5 +382,6 @@ body::before {
 }
 .project-card__year {
   font-size: 0.78rem;
+  font-weight: 500;
   color: var(--color-ink-mute);
 }
