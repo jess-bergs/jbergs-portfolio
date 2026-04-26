@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
 import Home from './pages/Home'
+import Fonts from './pages/Fonts'
 // import ProjectDetail from './pages/ProjectDetail'
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="/fonts" element={<Fonts />} />
           {/* Example route for future use - uncomment when needed:
           <Route path="/project/:id" element={<ProjectDetail />} />
           */}
