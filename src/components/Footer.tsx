@@ -1,45 +1,40 @@
-import { Button } from '@/components/ui/button'
-
 const Footer = () => {
-  const currentYear = new Date().getFullYear()
-
+  const year = new Date().getFullYear()
   return (
-    <footer className="py-16 border-t border-gray-200 mt-20">
-      <div className="flex justify-between items-center flex-wrap gap-6">
-        <p className="text-sm text-primary/60">
-          © {currentYear} Jessica Bergs
-        </p>
-        <div className="flex gap-6 flex-wrap">
-          <Button
-            variant="link"
-            asChild
-            className="h-auto p-0 text-sm font-semibold text-primary/70 hover:text-primary no-underline hover:no-underline"
+    <footer
+      id="contact"
+      className="mt-16 px-6 py-8 text-center text-[0.78rem] md:px-8"
+      style={{ color: 'var(--color-ink-mute)' }}
+    >
+      <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-4 md:justify-between">
+        <p className="m-0">© {year} Jessica Bergs</p>
+        <p className="m-0 flex flex-wrap items-center gap-4">
+          <a
+            href="mailto:info@jbergs.eu"
+            className="no-underline hover:underline"
+            style={{ color: 'var(--color-ink-mute)' }}
           >
-            <a
-              href="https://scholar.google.com/citations?user=jUpxHmsAAAAJ&hl=en"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Google Scholar
-            </a>
-          </Button>
-          <Button
-            variant="link"
-            asChild
-            className="h-auto p-0 text-sm font-semibold text-primary/70 hover:text-primary no-underline hover:no-underline"
-          >
-            <a
-              href="https://www.linkedin.com/in/jbergs/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              LinkedIn
-            </a>
-          </Button>
-          <span className="text-sm font-semibold text-primary/70">
             info[at]jbergs[dot]eu
-          </span>
-        </div>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/jbergs/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="no-underline hover:underline"
+            style={{ color: 'var(--color-ink-mute)' }}
+          >
+            LinkedIn
+          </a>
+          <a
+            href="https://scholar.google.com/citations?user=jUpxHmsAAAAJ&hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="no-underline hover:underline"
+            style={{ color: 'var(--color-ink-mute)' }}
+          >
+            Google Scholar
+          </a>
+        </p>
       </div>
     </footer>
   )

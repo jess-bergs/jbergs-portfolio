@@ -5,13 +5,14 @@ import Projects from '../components/Projects'
 const Home = () => {
   return (
     <>
-      {/* Hero and About side by side */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 py-8 md:py-12">
+      {/* Hero (left) + About (right) on large screens, stacked on mobile */}
+      <div className="grid grid-cols-1 gap-10 py-10 md:py-14 lg:grid-cols-2 lg:gap-16">
         <Hero />
         <About />
       </div>
 
-      {/* Projects full width below */}
+      <hr className="rule" />
+
       <Projects />
     </>
   )
