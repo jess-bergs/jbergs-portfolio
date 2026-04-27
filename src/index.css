@@ -34,7 +34,7 @@
 }
 @theme {
   /* ---------- Brand palette (Tinkerbox-style) ---------- */
-  --color-bg-top: #fcf8f2;
+  --color-bg-top: #fefcf9;
   --color-bg-bottom: #c2d3e0;
   --color-ink: #0a0a0a;
   --color-ink-soft: #2c3140;
@@ -197,7 +197,7 @@ body::before {
   line-height: 1.05;
   letter-spacing: 0;
   margin: 0 0 2rem;
-  max-width: 22ch;
+  max-width: 60%;
   text-transform: none;
   color: #1d2029;
 }
