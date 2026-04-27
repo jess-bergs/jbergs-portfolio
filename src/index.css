@@ -114,6 +114,11 @@ body {
 }
 .skip:focus { left: 0; }
 
+@keyframes frameWobble {
+  0%   { transform: rotate(-10deg); }
+  100% { transform: rotate(10deg); }
+}
+
 /* ---------- Coefficient-style colourful frame around the viewport ---------- */
 body::before {
   content: '';
@@ -126,15 +131,17 @@ body::before {
   background:
     linear-gradient(135deg,
       #ffdfa3 0%,
-      #ffc8dd 35%,
-      #e6ccf3 65%,
+      #ffc8dd 20%,
+        #ffdfa3 40%,
+        #e6ccf3 68%,
       #c5dafd 85%,
-      #ffdfa3 100%) border-box;
+      #ffc8dd 100%) border-box;
   -webkit-mask:
     linear-gradient(#000 0 0) padding-box,
     linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
           mask-composite: exclude;
+  animation: frameWobble 14s ease-in-out infinite alternate;
 }
 @media (max-width: 40rem) {
   body::before { inset: 8px; }
@@ -146,20 +153,20 @@ body::before {
   top: -160px;
     right: auto;
     left: 45%;
-      width: 75%;
-      aspect-ratio: 1 / 1.7;
+      width: 65%;
+        aspect-ratio: 1 / 1.8;
   z-index: -1;
   background:
-    radial-gradient(45% 90% at 12% 50%, #e6ccf3 0%, rgba(230, 204, 243, 0) 80%),
-      radial-gradient(40% 95% at 35% 50%, #ffc8dd 0%, rgba(255, 200, 221, 0) 78%),
-      radial-gradient(45% 90% at 62% 50%, #ffdfa3 0%, rgba(255, 223, 163, 0) 80%),
-      radial-gradient(45% 95% at 88% 50%, #c5dafd 0%, rgba(197, 218, 253, 0) 82%);
+  radial-gradient(40% 95% at 35% 50%, #ffc8dd 0%, rgba(255, 200, 221, 0) 78%),
+    radial-gradient(45% 90% at 62% 50%, #ffdfa3 0%, rgba(255, 223, 163, 0) 80%),
+  radial-gradient(45% 95% at 88% 50%, #c5cbfd 0%, rgba(197, 218, 253, 0) 82%),
+    radial-gradient(45% 85% at 12% 50%, #e6ccf3 0%, rgba(230, 204, 243, 0) 80%);
       background-size: 220% 100%;
       background-position: 0% 50%;
       filter: blur(80px);
         opacity: 0.75;
   pointer-events: none;
-  transform: rotate(50deg);
+  transform: rotate(35deg);
   transform-origin: 50% 50%;
   animation:
     heroBlobPrism 28s ease-in-out infinite alternate,
@@ -182,7 +189,7 @@ body::before {
     }
   
     50% {
-      scale: 1.06;
+      scale: 1.0;
     }
 }
 @media (prefers-reduced-motion: reduce) {
