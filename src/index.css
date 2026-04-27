@@ -126,7 +126,7 @@ body::before {
   background:
     linear-gradient(135deg,
       #ffd1c0 0%,
-      #fff3a8 25%,
+      #ffdfa3 25%,
       #e6ccf3 55%,
       #c5dafd 80%,
       #ffd1c0 100%) border-box;
@@ -152,7 +152,7 @@ body::before {
   background:
     radial-gradient(45% 90% at 12% 50%, #e6ccf3 0%, rgba(230, 204, 243, 0) 80%),
       radial-gradient(40% 95% at 35% 50%, #ffc8dd 0%, rgba(255, 200, 221, 0) 78%),
-      radial-gradient(45% 90% at 62% 50%, #fff3a8 0%, rgba(255, 243, 168, 0) 80%),
+      radial-gradient(45% 90% at 62% 50%, #ffdfa3 0%, rgba(255, 223, 163, 0) 80%),
       radial-gradient(45% 95% at 88% 50%, #c5dafd 0%, rgba(197, 218, 253, 0) 82%);
       background-size: 220% 100%;
       background-position: 0% 50%;

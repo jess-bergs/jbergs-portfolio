@@ -1,24 +1,10 @@
 import { build } from 'vite'
-import { readFileSync, writeFileSync, unlinkSync, readdirSync } from 'fs'
-import { join } from 'path'
 
+// The prerender entry shares React/ReactDOM/router with the main bundle, so
+// Vite emits the shared vendor chunk under the `prerender-*.js` name and the
+// runtime `index-*.js` imports from it. We previously deleted that chunk and
+// stripped its modulepreload link, which broke the deployed app — keep
+// everything Vite emits as-is.
 await build()
-
-// Clean up: remove the prerender chunk (only needed at build time)
-const distDir = join(import.meta.dirname, '..', 'dist')
-const assetsDir = join(distDir, 'assets')
-
-// Remove prerender JS file from dist
-for (const file of readdirSync(assetsDir)) {
-  if (file.startsWith('prerender-') && file.endsWith('.js')) {
-    unlinkSync(join(assetsDir, file))
-  }
-}
-
-// Remove its modulepreload link from index.html
-const indexPath = join(distDir, 'index.html')
-let html = readFileSync(indexPath, 'utf-8')
-html = html.replace(/<link rel="modulepreload"[^>]*prerender[^>]*>\n?\s*/g, '')
-writeFileSync(indexPath, html)
 
 process.exit(0)
