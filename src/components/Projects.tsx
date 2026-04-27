@@ -81,7 +81,7 @@ const Projects = () => {
     <section id="work" className="relative z-10 py-12">
       <h2 className="section-h2 mb-8">Selected Work</h2>
 
-      <div className="mb-8 flex flex-wrap items-center gap-x-6 gap-y-3">
+      <div className="mb-8 flex flex-col items-start gap-4">
         <div className="flex flex-wrap gap-2">
           <button
             type="button"

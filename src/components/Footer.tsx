@@ -10,11 +10,11 @@ const Footer = () => {
         <p className="m-0">© {year} Jessica Bergs</p>
         <p className="m-0 flex flex-wrap items-center gap-4">
           <a
-            href="mailto:info@jbergs.eu"
+            href="mailto:contact@jbergs.eu"
             className="no-underline hover:underline"
             style={{ color: 'var(--color-ink-mute)' }}
           >
-            info[at]jbergs[dot]eu
+            Contact
           </a>
           <a
             href="https://www.linkedin.com/in/jbergs/"

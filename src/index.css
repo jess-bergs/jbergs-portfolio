@@ -34,7 +34,7 @@
 }
 @theme {
   /* ---------- Brand palette (Tinkerbox-style) ---------- */
-  --color-bg-top: #fbfbfb;
+  --color-bg-top: #fcf8f2;
   --color-bg-bottom: #c2d3e0;
   --color-ink: #0a0a0a;
   --color-ink-soft: #2c3140;
@@ -81,10 +81,12 @@ html { scroll-behavior: smooth; }
 body {
   margin: 0;
   min-height: 100vh;
-  background:
+  background-color: var(--color-bg-top);
+  background-image:
     linear-gradient(180deg,
-        var(--color-bg-top) 20%,
-      var(--color-bg-bottom) 95%) fixed;
+      var(--color-bg-top) 35%,
+      var(--color-bg-bottom) 95%);
+  background-attachment: fixed;
   color: var(--color-ink);
   font-family: var(--font-sans);
   font-size: 16px;
@@ -189,14 +191,15 @@ body::before {
 
 /* ---------- Hero serif headline ---------- */
 .hero-h1 {
-  font-family: "Frank Ruhl Libre", var(--font-serif);
+  font-family: var(--font-serif);
     font-weight: 500;
-      font-size: clamp(2.5rem, 6.2vw, 4.1rem);
+      font-size: clamp(2.2rem, 5.4vw, 3.55rem);
   line-height: 1.05;
-  letter-spacing: 0.005em;
+  letter-spacing: 0;
   margin: 0 0 2rem;
   max-width: 22ch;
   text-transform: none;
+  color: #1d2029;
 }
 
 /* ---------- Brand wordmark (serif) ---------- */
@@ -336,7 +339,7 @@ body::before {
 
 /* Project card (refined) */
 .project-card {
-  background: rgba(255, 255, 255, 0.65);
+  background: rgba(254, 252, 249, 0.65);
   border: 1px solid var(--color-line);
   border-radius: 14px;
   overflow: hidden;
@@ -349,7 +352,7 @@ body::before {
 }
 .project-card:hover {
   transform: translateY(-2px);
-  background: #ffffff;
+  background: #fefcf9;
   box-shadow: 0 8px 24px rgba(10, 10, 10, 0.06);
 }
 .project-card__media {
