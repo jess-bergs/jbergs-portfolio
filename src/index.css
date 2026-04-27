@@ -35,7 +35,7 @@
 @theme {
   /* ---------- Brand palette (Tinkerbox-style) ---------- */
   --color-bg-top: #fefcf9;
-  --color-bg-bottom: #c2d3e0;
+  --color-bg-bottom: #c6d6e3;
   --color-ink: #0a0a0a;
   --color-ink-soft: #2c3140;
   --color-ink-mute: #6b7184;
@@ -125,11 +125,11 @@ body::before {
   padding: 1px;
   background:
     linear-gradient(135deg,
-      #ffd1c0 0%,
-      #ffdfa3 25%,
-      #e6ccf3 55%,
-      #c5dafd 80%,
-      #ffd1c0 100%) border-box;
+      #ffdfa3 0%,
+      #ffc8dd 35%,
+      #e6ccf3 65%,
+      #c5dafd 85%,
+      #ffdfa3 100%) border-box;
   -webkit-mask:
     linear-gradient(#000 0 0) padding-box,
     linear-gradient(#000 0 0);
@@ -143,11 +143,11 @@ body::before {
 /* ---------- Hero blob (rotate + breathe) ---------- */
 .hero-blob {
   position: absolute;
-  top: -260px;
+  top: -160px;
     right: auto;
-    left: 145%;
-    width: 120%;
-    aspect-ratio: 1.2 / 1;
+    left: 45%;
+      width: 75%;
+      aspect-ratio: 1 / 1.7;
   z-index: -1;
   background:
     radial-gradient(45% 90% at 12% 50%, #e6ccf3 0%, rgba(230, 204, 243, 0) 80%),
@@ -156,8 +156,8 @@ body::before {
       radial-gradient(45% 95% at 88% 50%, #c5dafd 0%, rgba(197, 218, 253, 0) 82%);
       background-size: 220% 100%;
       background-position: 0% 50%;
-      filter: blur(45px);
-  opacity: 0.85;
+      filter: blur(80px);
+        opacity: 0.75;
   pointer-events: none;
   transform: rotate(50deg);
   transform-origin: 50% 50%;
