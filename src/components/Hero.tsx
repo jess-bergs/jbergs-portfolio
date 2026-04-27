@@ -10,8 +10,8 @@ const Hero = () => {
         </h1>
 
         <p
-          className="text-[1.2rem] leading-[1.5]"
-          style={{ color: 'var(--color-ink-soft)', fontFamily: 'var(--font-serif)' }}
+          className="text-[1.12rem] leading-[1.5]"
+          style={{ color: 'var(--color-ink-soft)', fontFamily: 'var(--font-sans)' }}
         >
           Human-AI Interaction @ UK AISI – Research Unit
           <br />
